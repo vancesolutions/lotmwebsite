@@ -25,7 +25,7 @@ export function BrochureContent() {
     <div className="brochure-content">
       <p className="brochure-intro">{site.intro}</p>
 
-      <BrochureList heading="Activities" items={activities} />
+      <BrochureList heading="Events" items={activities} />
 
       <BrochureList heading="Our Amenities Include:" items={amenities} />
 
