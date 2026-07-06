@@ -1,6 +1,7 @@
-import { execSync } from "node:child_process";
-import { existsSync, statSync } from "node:fs";
+import { createWriteStream, existsSync, rmSync, statSync } from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
+import archiver from "archiver";
 
 const root = process.cwd();
 const outDir = path.join(root, "out");
@@ -12,10 +13,20 @@ if (!existsSync(outDir)) {
 }
 
 if (existsSync(zipPath)) {
-  execSync(`rm -f "${zipPath}"`);
+  rmSync(zipPath, { force: true });
 }
 
-execSync(`cd "${outDir}" && zip -r "${zipPath}" .`, { stdio: "inherit" });
+await new Promise((resolve, reject) => {
+  const output = createWriteStream(zipPath);
+  const archive = archiver("zip", { zlib: { level: 9 } });
+
+  output.on("close", resolve);
+  archive.on("error", reject);
+
+  archive.pipe(output);
+  archive.directory(outDir, false);
+  archive.finalize();
+});
 
 const zipMb = (statSync(zipPath).size / (1024 * 1024)).toFixed(1);
 
