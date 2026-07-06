@@ -44,3 +44,7 @@ next-env.d.ts
 /data
 *.db
 *.db-journal
+
+# large source PDF (images extracted to public/)
+docs/design.pdf
+docs/page-*.png

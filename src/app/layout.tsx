@@ -1,24 +1,18 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { Header } from "@/components/Header";
 import "./globals.css";
-
-const display = Cormorant_Garamond({
-  variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 const body = Montserrat({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
   title: "Light On The Mountain Campground | Williams, Arizona",
   description:
-    "A faith-based retreat and conference center in Williams, Arizona. Purpose-built facilities nestled in the Kaibab National Forest.",
+    "A faith-based retreat and conference center nestled in the ponderosa pines of Kaibab National Forest, 3 miles south of Williams, AZ.",
 };
 
 export default function RootLayout({
@@ -27,10 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${display.variable} ${body.variable} scroll-smooth`}
-    >
+    <html lang="en" className={`${body.variable} scroll-smooth`}>
       <body className="min-h-full antialiased">
         <Header />
         {children}

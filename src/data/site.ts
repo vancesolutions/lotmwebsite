@@ -1,128 +1,112 @@
 export const site = {
   name: "Light On The Mountain Campground",
-  tagline: "A Faith-Based Retreat & Conference Center",
-  location: "Williams, Arizona · Kaibab National Forest",
   address: {
     street: "2284 S. Perkinsville Rd",
     city: "Williams, AZ 86046",
   },
-  phone: "(928) 637-3845",
+  phone: "928-637-3845",
+  phoneDisplay: "(928) 637-3845",
   email: "info@lotmcamp.com",
-  mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.9!2d-112.19!3d35.24!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDE0JzI0LjAiTiAxMTLCsDExJzI0LjAiVw!5e0!3m2!1sen!2sus!4v1",
+  intro:
+    "Light On The Mountain Campground is a faith-based facility nestled in the ponderosa pines of Kaibab National Forest, 3 miles south of Williams, AZ and 35 miles west of Flagstaff. We host a wide variety of activities, including:",
+  contactCta:
+    "For more information, please contact us by phone or email. We look forward to working with you to plan your next event!",
 } as const;
 
-export const facilities = [
-  {
-    id: "conference",
-    stat: "100",
-    statLabel: "Guest Capacity",
-    title: "Conference & Meeting Space",
-    description:
-      "A versatile gathering hall with comfortable seating for up to 100 attendees. Equipped with a sound system and projection screen — ideal for retreats, conferences, worship services, and group sessions.",
-    image:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Conference and meeting space with rows of seating",
-  },
-  {
-    id: "dining",
-    stat: null,
-    statLabel: null,
-    title: "Full-Service Dining Hall & Commercial Kitchen",
-    description:
-      "Our spacious dining hall is anchored by a fully equipped commercial kitchen, ready to serve your group three meals a day. Bring your own cook or cater — every tool you need is here.",
-    image:
-      "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Commercial kitchen with stainless steel equipment",
-  },
-  {
-    id: "dormitory",
-    stat: "40",
-    statLabel: "Beds",
-    title: "Bunkhouse-Style Dormitory",
-    description:
-      "Sleep comfortably in our 40-bed dormitory featuring sturdy wooden bunk beds, a common living area, restrooms, and showers. Clean, well-maintained, and designed for group stays.",
-    image:
-      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Bunkhouse-style dormitory with wooden bunk beds",
-  },
+export const activities = [
+  "Retreats",
+  "Youth Groups",
+  "Conferences",
+  "Weddings/Receptions",
+  "RV Parking",
+  "Dry Camping",
 ] as const;
 
-export const outdoors = [
-  {
-    title: "Multipurpose Building",
-    description:
-      "Additional flexible gathering space for workshops, crafts, and small group activities.",
-    image:
-      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Multipurpose building interior",
-  },
-  {
-    title: "Volleyball Court & Open Meadow",
-    description:
-      "Wide-open spaces for recreation, sports, and team-building exercises under the Arizona sky.",
-    image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Open meadow with pine trees and mountain views",
-  },
-  {
-    title: "RV Parking",
-    description:
-      "Spacious on-site RV parking for individual travelers and groups who prefer their own accommodations.",
-    image:
-      "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "RV parking area among pine trees",
-  },
+export const amenities = [
+  "40-Bed Bunkhouse-Style Dormitory",
+  "Meeting Space for Up to 100 Participants",
+  "Fully Licensed Commercial Kitchen",
+  "Starlink High-Speed Internet",
+  "Ping-Pong · Cornhole · Basketball",
+  "Horseshoes · Volleyball",
 ] as const;
 
 export const attractions = [
+  "Grand Canyon National Park",
+  "Grand Canyon Railway",
+  "Bearizona Wild Animal Park",
+  "Williams Deer Farm",
+  "Hiking Trails",
+  "Lakes",
+  "Elephant Rocks Golf Course",
+  "Historic Williams, AZ on the Iconic Route 66",
+] as const;
+
+export const galleryPhotos = [
   {
-    title: "Grand Canyon National Park",
-    distance: "60 mi north",
-    image:
-      "https://images.unsplash.com/photo-1474040983956-379ce4a8b322?auto=format&fit=crop&w=900&q=80",
-    imageAlt: "Grand Canyon National Park vista",
+    src: "/gallery/photo-1.jpeg",
+    alt: "Light On The Mountain Campground building exterior among ponderosa pines",
+    caption: "Campground Exterior",
   },
   {
-    title: "Grand Canyon Railway",
-    distance: "5 mi · departs from Williams",
-    image:
-      "https://images.unsplash.com/photo-1515169067865-5387ec356754?auto=format&fit=crop&w=900&q=80",
-    imageAlt: "Historic train at Grand Canyon Railway",
+    src: "/gallery/photo-2.jpeg",
+    alt: "Meeting hall with rows of seating facing a podium",
+    caption: "Conference & Meeting Space",
   },
   {
-    title: "Bearizona Wildlife Park",
-    distance: "5 mi",
-    image:
-      "https://images.unsplash.com/photo-1474511320728-7a7510f4b34a?auto=format&fit=crop&w=900&q=80",
-    imageAlt: "Wildlife in natural forest setting",
+    src: "/gallery/photo-3.jpeg",
+    alt: "Meeting hall with projection screen and stage",
+    caption: "Meeting Hall — Stage View",
   },
   {
-    title: "Williams Deer Farm",
-    distance: "6 mi",
-    image:
-      "https://images.unsplash.com/photo-1484406566174-9cb585b62d7d?auto=format&fit=crop&w=900&q=80",
-    imageAlt: "Deer in a farm setting",
+    src: "/gallery/photo-4.jpeg",
+    alt: "Open meeting hall with chairs stacked along the walls",
+    caption: "Flexible Meeting Space",
   },
   {
-    title: "Lakes & Hiking Trails",
-    distance: "Nearby in Kaibab National Forest",
-    image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80",
-    imageAlt: "Forest lake surrounded by pine trees",
+    src: "/gallery/photo-5.jpeg",
+    alt: "Fully licensed commercial kitchen",
+    caption: "Commercial Kitchen",
   },
   {
-    title: "Historic Route 66 · Williams",
-    distance: "5 mi · shops, restaurants & hotels",
-    image:
-      "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=900&q=80",
-    imageAlt: "Historic downtown street",
+    src: "/gallery/photo-6.jpeg",
+    alt: "Bunkhouse-style dormitory with wooden bunk beds",
+    caption: "40-Bed Dormitory",
+  },
+  {
+    src: "/gallery/photo-7.jpeg",
+    alt: "Grand Canyon National Park vista",
+    caption: "Grand Canyon National Park",
+  },
+  {
+    src: "/gallery/photo-8.jpeg",
+    alt: "Bearizona Wild Animal Park entrance",
+    caption: "Bearizona Wild Animal Park",
+  },
+  {
+    src: "/gallery/photo-9.jpeg",
+    alt: "Elephant Rocks Golf Course at Williams sign",
+    caption: "Elephant Rocks Golf Course",
+  },
+  {
+    src: "/gallery/photo-10.png",
+    alt: "Outdoor dining area near Route 66 in Williams",
+    caption: "Historic Williams, AZ",
+  },
+  {
+    src: "/gallery/photo-12.jpeg",
+    alt: "Hiking trail sign in Kaibab National Forest",
+    caption: "Hiking Trails",
+  },
+  {
+    src: "/gallery/photo-13.jpeg",
+    alt: "Open meadow surrounded by ponderosa pines",
+    caption: "Kaibab National Forest",
   },
 ] as const;
 
 export const navLinks = [
-  { label: "Facilities", href: "#facilities" },
-  { label: "Outdoors", href: "#outdoors" },
-  { label: "Attractions", href: "#attractions" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Photo Gallery", href: "/gallery" },
+  { label: "Contact", href: "/#contact" },
 ] as const;
