@@ -5,12 +5,12 @@ function BrochureList({
   heading,
   items,
 }: {
-  heading: string;
+  heading?: string;
   items: readonly string[];
 }) {
   return (
     <section className="brochure-block">
-      <h2 className="brochure-heading">{heading}</h2>
+      {heading ? <h2 className="brochure-heading">{heading}</h2> : null}
       <ul className="brochure-list">
         {items.map((item) => (
           <li key={item}>{item}</li>
