@@ -107,7 +107,6 @@ a {
   align-items: flex-start;
   padding: 16px 24px;
   color: var(--white);
-  font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -117,11 +116,13 @@ a {
 .hero-address {
   margin: 0;
   line-height: 1.5;
+  font-size: 18px;
 }
 
 .hero-phone {
   color: var(--white);
   text-align: right;
+  font-size: 24px;
 }
 
 .hero-phone:hover {
