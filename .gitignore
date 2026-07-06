@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# deploy package
+lotmwebsite-deploy.zip
+
 # production
 /build
 
