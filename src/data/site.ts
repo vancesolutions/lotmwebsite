@@ -8,7 +8,7 @@ export const site = {
   phoneDisplay: "(928) 637-3845",
   email: "info@lotmcamp.com",
   intro:
-    "Light On The Mountain Campground is a faith-based facility nestled in the ponderosa pines of Kaibab National Forest, 3 miles south of Williams, AZ and 35 miles west of Flagstaff. We host a wide variety of activities, including:",
+    "Light On The Mountain Campground is a faith-based facility nestled in the ponderosa pines of Kaibab National Forest, 3 miles south of Williams, AZ and 35 miles west of Flagstaff. We host a wide variety of events, including:",
   contactCta:
     "For more information, please contact us by phone or email. We look forward to working with you to plan your next event!",
 } as const;
