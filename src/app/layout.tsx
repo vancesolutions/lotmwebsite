@@ -21,8 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${body.variable} scroll-smooth`}>
-      <body className="min-h-full antialiased">
+    <html
+      lang="en"
+      className={`${body.variable} scroll-smooth`}
+      suppressHydrationWarning
+    >
+      <body className="min-h-full antialiased" suppressHydrationWarning>
         <Header />
         {children}
       </body>

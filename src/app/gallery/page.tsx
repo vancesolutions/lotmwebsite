@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
 import { galleryPhotos } from "@/data/site";
@@ -22,12 +21,14 @@ export default function GalleryPage() {
       <div className="gallery-grid">
         {galleryPhotos.map((photo) => (
           <figure key={photo.src} className="gallery-item">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={photo.src}
               alt={photo.alt}
               width={1200}
               height={800}
               className="gallery-image"
+              loading="lazy"
             />
             <figcaption>{photo.caption}</figcaption>
           </figure>

@@ -1,16 +1,13 @@
-import Image from "next/image";
 import { site } from "@/data/site";
 
 export function Hero() {
   return (
     <section className="hero">
-      <Image
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         src="/images/p1-img-0.png"
         alt="Snow-capped mountains viewed from Kaibab National Forest"
-        fill
-        priority
         className="hero-image"
-        sizes="100vw"
       />
 
       <div className="hero-topbar">
@@ -25,13 +22,13 @@ export function Hero() {
       </div>
 
       <div className="hero-logo-wrap">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="/images/p1-img-1.png"
           alt={site.name}
           width={400}
           height={122}
           className="hero-logo"
-          priority
         />
       </div>
     </section>

@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <p>
-        Copyright {new Date().getFullYear()} by {site.name}
+        Copyright {site.copyrightYear} by {site.name}
       </p>
     </footer>
   );
