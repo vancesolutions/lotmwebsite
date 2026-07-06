@@ -28,8 +28,8 @@ export function Hero() {
         <Image
           src="/images/p1-img-1.png"
           alt={site.name}
-          width={720}
-          height={220}
+          width={400}
+          height={122}
           className="hero-logo"
           priority
         />

@@ -101,7 +101,7 @@ a {
 
 .hero-image {
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 20%;
 }
 
 .hero-topbar {
@@ -139,8 +139,8 @@ a {
 .hero-logo-wrap {
   position: relative;
   z-index: 2;
-  width: min(720px, 92%);
-  margin: 0 auto 24px;
+  width: min(400px, 58%);
+  margin: 0 auto 32px;
   padding: 0 16px;
 }
 
@@ -148,6 +148,7 @@ a {
   width: 100%;
   height: auto;
   display: block;
+  opacity: 0.95;
 }
 
 .brochure-page {
