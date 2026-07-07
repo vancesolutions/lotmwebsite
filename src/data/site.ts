@@ -103,7 +103,7 @@ export const galleryPhotos = [
   {
     src: "/gallery/photo-13.jpeg",
     alt: "Open meadow surrounded by ponderosa pines",
-    caption: "Kaibab National Forest",
+    caption: "Local Wildlife",
   },
 ] as const;
 
