@@ -19,6 +19,7 @@ export const activities = [
   "Youth Groups",
   "Conferences",
   "Weddings/Receptions",
+  "Live Music",
   "RV Parking",
   "Dry Camping",
 ] as const;
