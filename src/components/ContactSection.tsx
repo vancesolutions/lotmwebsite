@@ -10,7 +10,7 @@ export function ContactSection() {
           Email: {site.email}
         </a>
         <a href={`tel:${site.phone.replace(/\D/g, "")}`} className="contact-phone">
-          Phone: {site.phoneDisplay}
+          Phone/Text: {site.phoneDisplay}
         </a>
       </div>
 
