@@ -58,7 +58,7 @@ export const galleryPhotos = [
   {
     src: "/gallery/photo-3.jpeg",
     alt: "Meeting hall with projection screen and stage",
-    caption: "Meeting Hall — Stage View",
+    caption: "Meeting Space for Up to 100 Attendees",
   },
   {
     src: "/gallery/photo-4.jpeg",
