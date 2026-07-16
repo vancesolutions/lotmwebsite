@@ -322,19 +322,22 @@ img {
 }
 
 .hero-logo-heading {
-  margin: 0;
+  margin: 0 auto;
   line-height: 0;
-  /* Compact mark over the trees — snow peaks stay fully open above */
-  width: min(34vw, 16rem);
-  max-height: 12vh;
-  flex: 0 0 auto;
+  /* Top edge sits just below the snow line; mark grows downward */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 29%;
+  width: min(74vw, 44rem);
+  max-height: 38vh;
 }
 
 .hero-logo {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 12vh;
+  max-height: 38vh;
   object-fit: contain;
   opacity: 1;
   background: #ffffff;
@@ -343,8 +346,10 @@ img {
 }
 
 .hero-copy {
+  position: relative;
+  z-index: 1;
   width: min(100%, 34rem);
-  margin-top: 0.7rem;
+  margin-top: 0;
   padding-bottom: 0.15rem;
 }
 
@@ -869,16 +874,17 @@ img {
   }
 
   .hero-logo-heading {
-    width: min(58vw, 13rem);
-    max-height: 11vh;
+    top: 32%;
+    width: min(88vw, 26rem);
+    max-height: 28vh;
   }
 
   .hero-logo {
-    max-height: 11vh;
+    max-height: 28vh;
   }
 
   .hero-copy {
-    margin-top: 0.65rem;
+    margin-top: 0;
   }
 
   .hero-support {
