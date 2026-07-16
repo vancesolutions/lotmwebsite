@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Fraunces, Source_Sans_3 } from "next/font/google";
 import { Header } from "@/components/Header";
 import "./globals.css";
 
-const body = Montserrat({
+const display = Fraunces({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const body = Source_Sans_3({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -23,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${body.variable} scroll-smooth`}
+      className={`${display.variable} ${body.variable} scroll-smooth`}
       suppressHydrationWarning
     >
       <body className="min-h-full antialiased" suppressHydrationWarning>

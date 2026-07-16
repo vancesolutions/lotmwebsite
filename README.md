@@ -1,19 +1,19 @@
-# lotmwebsite
+# Light On The Mountain Campground
 
-Marketing website for **Light On The Mountain Campground** — built from the official PDF brochure.
+Modern marketing website for **Light On The Mountain Campground**, rebuilt from the official PDF brochure (`Lotm Camp.pdf`).
 
 A faith-based retreat and conference center nestled in the ponderosa pines of Kaibab National Forest, 3 miles south of Williams, AZ.
 
 ## Pages
 
-- **Home** (`/`) — brochure-style layout with activities, amenities, attractions, contact, and map
-- **Photo Gallery** (`/gallery`) — facility and regional photos extracted from the brochure
+- **Home** (`/`) — full-bleed hero, gatherings, amenities, nearby attractions, gallery preview, and contact/map
+- **Photo Gallery** (`/gallery`) — facility and regional photos from the brochure
 
 ## Stack
 
-- Next.js 16 (App Router)
+- Next.js 16 (App Router, static export)
 - React 19 + Tailwind CSS 4
-- Montserrat typography matching the brochure
+- Fraunces + Source Sans 3 typography
 
 ## Getting started
 
@@ -34,7 +34,7 @@ This creates **`lotmwebsite-deploy.zip`** — a static site you can upload to cP
 
 ## Source material
 
-The site content and images are sourced from `docs/design.pdf` (the official campground brochure).
+Site content and imagery are based on the Light On The Mountain Campground brochure (Lotm Camp.pdf).
 
 ## Scripts
 

@@ -1,35 +1,33 @@
+import Link from "next/link";
 import { site } from "@/data/site";
 
 export function Hero() {
   return (
-    <section className="hero">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/images/p1-img-0.png"
-        alt="Snow-capped mountains viewed from Kaibab National Forest"
-        className="hero-image"
-      />
-
-      <div className="hero-topbar">
-        <p className="hero-address">
-          {site.address.street}
-          <br />
-          {site.address.city}
-        </p>
-        <a href={`tel:${site.phone.replace(/\D/g, "")}`} className="hero-phone">
-          {site.phone}
-        </a>
-      </div>
-
-      <div className="hero-logo-wrap">
+    <section className="hero" aria-label="Welcome">
+      <div className="hero-media" aria-hidden="true">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/p1-img-1.png"
-          alt={site.name}
-          width={400}
-          height={122}
-          className="hero-logo"
+          src="/images/p1-img-0.png"
+          alt=""
+          className="hero-image"
         />
+        <div className="hero-shade" />
+      </div>
+
+      <div className="hero-content">
+        <h1 className="hero-brand animate-fade-up">
+          Light On The <em>Mountain</em>
+        </h1>
+        <p className="hero-headline animate-fade-up-delay-1">{site.tagline}</p>
+        <p className="hero-support animate-fade-up-delay-2">{site.intro}</p>
+        <div className="hero-actions animate-fade-up-delay-3">
+          <a href="#contact" className="btn btn-primary">
+            Plan Your Event
+          </a>
+          <Link href="/gallery" className="btn btn-ghost">
+            Photo Gallery
+          </Link>
+        </div>
       </div>
     </section>
   );

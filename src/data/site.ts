@@ -1,5 +1,7 @@
 export const site = {
   name: "Light On The Mountain Campground",
+  shortName: "Light On The Mountain",
+  tagline: "Retreat. Gather. Be restored.",
   address: {
     street: "2284 S. Perkinsville Rd",
     city: "Williams, AZ 86046",
@@ -9,28 +11,28 @@ export const site = {
   email: "info@lotmcamp.com",
   copyrightYear: 2026,
   intro:
-    "Light On The Mountain Campground is a faith-based facility nestled in the ponderosa pines of Kaibab National Forest, 3 miles south of Williams, AZ and 35 miles west of Flagstaff. We host a wide variety of events, including:",
+    "A faith-based facility nestled in the ponderosa pines of Kaibab National Forest — 3 miles south of Williams, AZ and 35 miles west of Flagstaff.",
   contactCta:
-    "For more information, please contact us by phone or email. We look forward to working with you to plan your next event!",
+    "We look forward to helping you plan your next retreat, gathering, or celebration.",
 } as const;
 
 export const activities = [
-  "Retreats",
-  "Youth Groups",
-  "Conferences",
-  "Weddings/Receptions",
-  "Live Music",
-  "RV Parking",
-  "Dry Camping",
+  { title: "Retreats", description: "Quiet space for renewal and reflection" },
+  { title: "Youth Groups", description: "Safe grounds for growing faith together" },
+  { title: "Conferences", description: "Meeting space for up to 100 participants" },
+  { title: "Weddings & Receptions", description: "Celebrate among the pines" },
+  { title: "Live Music", description: "Open halls ready for worship and performance" },
+  { title: "RV Parking", description: "Convenient parking for overnight guests" },
+  { title: "Dry Camping", description: "Simple stays under the Arizona sky" },
 ] as const;
 
 export const amenities = [
-  "40-Bed Bunkhouse-Style Dormitory",
-  "Meeting Space for Up to 100 Participants",
-  "Fully Licensed Commercial Kitchen",
-  "Starlink High-Speed Internet",
-  "Ping-Pong · Cornhole · Basketball",
-  "Horseshoes · Volleyball",
+  "40-bed bunkhouse-style dormitory",
+  "Meeting space for up to 100 participants",
+  "Fully licensed commercial kitchen",
+  "Starlink high-speed internet",
+  "Ping-pong, cornhole, and basketball",
+  "Horseshoes and volleyball",
 ] as const;
 
 export const attractions = [
@@ -38,42 +40,42 @@ export const attractions = [
   "Grand Canyon Railway",
   "Bearizona Wild Animal Park",
   "Williams Deer Farm",
-  "Hiking Trails",
+  "Hiking trails",
   "Lakes",
   "Elephant Rocks Golf Course",
-  "Historic Williams, AZ on the Iconic Route 66",
+  "Historic Williams on Route 66",
 ] as const;
 
 export const galleryPhotos = [
   {
     src: "/gallery/photo-1.jpeg",
     alt: "Light On The Mountain Campground building exterior among ponderosa pines",
-    caption: "Campground Exterior",
+    caption: "Campground exterior",
   },
   {
     src: "/gallery/photo-2.jpeg",
     alt: "Meeting hall with rows of seating facing a podium",
-    caption: "Conference & Meeting Space",
+    caption: "Conference & meeting space",
   },
   {
     src: "/gallery/photo-3.jpeg",
     alt: "Meeting hall with projection screen and stage",
-    caption: "Meeting Space for Up to 100 Attendees",
+    caption: "Space for up to 100",
   },
   {
     src: "/gallery/photo-4.jpeg",
     alt: "Open meeting hall with chairs stacked along the walls",
-    caption: "Flexible Meeting Space",
+    caption: "Flexible gathering hall",
   },
   {
     src: "/gallery/photo-5.jpeg",
     alt: "Fully licensed commercial kitchen",
-    caption: "Commercial Kitchen",
+    caption: "Commercial kitchen",
   },
   {
     src: "/gallery/photo-6.jpeg",
     alt: "Bunkhouse-style dormitory with wooden bunk beds",
-    caption: "40-Bed Dormitory",
+    caption: "40-bed dormitory",
   },
   {
     src: "/gallery/photo-7.jpeg",
@@ -83,7 +85,7 @@ export const galleryPhotos = [
   {
     src: "/gallery/photo-8.jpeg",
     alt: "Bearizona Wild Animal Park entrance",
-    caption: "Bearizona Wild Animal Park",
+    caption: "Bearizona",
   },
   {
     src: "/gallery/photo-9.jpeg",
@@ -98,17 +100,21 @@ export const galleryPhotos = [
   {
     src: "/gallery/photo-12.jpeg",
     alt: "Hiking trail sign in Kaibab National Forest",
-    caption: "Hiking Trails",
+    caption: "Hiking trails",
   },
   {
     src: "/gallery/photo-13.jpeg",
     alt: "Open meadow surrounded by ponderosa pines",
-    caption: "Local Wildlife",
+    caption: "Local wildlife",
   },
 ] as const;
 
+export const featuredGallery = galleryPhotos.slice(0, 4);
+
 export const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Photo Gallery", href: "/gallery" },
+  { label: "Gatherings", href: "/#gatherings" },
+  { label: "Amenities", href: "/#amenities" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/#contact" },
 ] as const;
