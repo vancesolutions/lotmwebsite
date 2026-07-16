@@ -19,8 +19,9 @@
   );
   --hero-shade: linear-gradient(
     180deg,
-    rgba(15, 36, 28, 0.35) 0%,
-    rgba(15, 36, 28, 0.2) 40%,
+    rgba(15, 36, 28, 0.08) 0%,
+    rgba(15, 36, 28, 0.05) 30%,
+    rgba(15, 36, 28, 0.42) 58%,
     rgba(15, 36, 28, 0.72) 100%
   );
 }
@@ -278,7 +279,7 @@ img {
   position: relative;
   min-height: 100svh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
   color: var(--white);
 }
@@ -292,7 +293,8 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  /* Keep snow peaks in the upper open zone */
+  object-position: center 28%;
   animation: hero-zoom 8s ease-out both;
 }
 
@@ -306,29 +308,25 @@ img {
   position: relative;
   z-index: 2;
   width: min(1120px, calc(100% - 2.5rem));
-  margin: 0 auto;
-  padding: 7rem 0 4.5rem;
+  /* Mid-lower band: on the mountain/forest transition, below the peaks */
+  margin: 18vh auto 0;
+  padding: 5.5rem 0 2.5rem;
 }
 
-.hero-brand {
+.hero-logo-heading {
   margin: 0;
-  font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(2.8rem, 8vw, 5.5rem);
-  font-weight: 500;
-  line-height: 0.95;
-  letter-spacing: -0.03em;
-  max-width: 12ch;
-  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.25);
+  line-height: 0;
 }
 
-.hero-brand em {
-  font-style: italic;
-  color: var(--amber);
-  font-weight: 400;
+.hero-logo {
+  display: block;
+  width: min(100%, 38rem);
+  height: auto;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.4));
 }
 
 .hero-headline {
-  margin: 1.5rem 0 0;
+  margin: 1.35rem 0 0;
   font-size: clamp(1.15rem, 2.2vw, 1.45rem);
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -843,7 +841,11 @@ img {
   }
 
   .hero-content {
-    padding-bottom: 3.25rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .hero-logo {
+    width: min(100%, 22rem);
   }
 
   .amenities-list,

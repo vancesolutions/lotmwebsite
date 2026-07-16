@@ -15,8 +15,15 @@ export function Hero() {
       </div>
 
       <div className="hero-content">
-        <h1 className="hero-brand animate-fade-up">
-          Light On The <em>Mountain</em>
+        <h1 className="hero-logo-heading animate-fade-up">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/logo-transparent.png"
+            alt={site.name}
+            width={1229}
+            height={512}
+            className="hero-logo"
+          />
         </h1>
         <p className="hero-headline animate-fade-up-delay-1">{site.tagline}</p>
         <p className="hero-support animate-fade-up-delay-2">{site.intro}</p>
