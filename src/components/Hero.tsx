@@ -18,7 +18,7 @@ export function Hero() {
         <h1 className="hero-logo-heading animate-fade-up">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/logo-transparent.png"
+            src="/images/p1-img-1.png"
             alt={site.name}
             width={1229}
             height={512}
