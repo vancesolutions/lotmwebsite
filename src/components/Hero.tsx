@@ -25,15 +25,18 @@ export function Hero() {
             className="hero-logo"
           />
         </h1>
-        <p className="hero-headline animate-fade-up-delay-1">{site.tagline}</p>
-        <p className="hero-support animate-fade-up-delay-2">{site.intro}</p>
-        <div className="hero-actions animate-fade-up-delay-3">
-          <a href="#contact" className="btn btn-primary">
-            Plan Your Event
-          </a>
-          <Link href="/gallery" className="btn btn-ghost">
-            Photo Gallery
-          </Link>
+
+        <div className="hero-copy animate-fade-up-delay-1">
+          <p className="hero-headline">{site.tagline}</p>
+          <p className="hero-support">{site.intro}</p>
+          <div className="hero-actions">
+            <a href="#contact" className="btn btn-primary">
+              Plan Your Event
+            </a>
+            <Link href="/gallery" className="btn btn-ghost">
+              Photo Gallery
+            </Link>
+          </div>
         </div>
       </div>
     </section>
